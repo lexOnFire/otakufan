@@ -1,0 +1,33 @@
+<svg width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="demonSlayerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC143C;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#B22222;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F4F4F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#demonSlayerGradient)" rx="8"/>
+  
+  <!-- Tanjiro silhouette -->
+  <g transform="translate(75, 60)">
+    <!-- Head -->
+    <circle cx="25" cy="25" r="18" fill="rgba(255,255,255,0.9)"/>
+    <!-- Hair -->
+    <path d="M12 12 Q20 5 28 12 Q35 8 40 15" stroke="rgba(139,69,19,0.8)" stroke-width="3" fill="none"/>
+    <!-- Body -->
+    <rect x="15" y="40" width="20" height="35" fill="#2F4F4F" rx="3"/>
+    <!-- Sword -->
+    <line x1="45" y1="35" x2="55" y2="25" stroke="#C0C0C0" stroke-width="3"/>
+    <rect x="53" y="22" width="6" height="8" fill="#8B4513"/>
+  </g>
+  
+  <!-- Water breathing effect -->
+  <path d="M30 150 Q50 140 70 150 Q90 160 110 150 Q130 140 150 150" stroke="rgba(100,149,237,0.6)" stroke-width="3" fill="none"/>
+  <path d="M40 170 Q60 160 80 170 Q100 180 120 170 Q140 160 160 170" stroke="rgba(100,149,237,0.4)" stroke-width="2" fill="none"/>
+  
+  <text x="100" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+    DEMON SLAYER
+  </text>
+</svg>

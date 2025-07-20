@@ -1,0 +1,33 @@
+<svg width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="narutoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#narutoGradient)" rx="8"/>
+  
+  <!-- Naruto silhouette -->
+  <g transform="translate(75, 50)">
+    <!-- Head -->
+    <circle cx="25" cy="25" r="20" fill="rgba(255,255,255,0.9)"/>
+    <!-- Spiky hair -->
+    <path d="M10 10 L15 5 L20 12 L25 3 L30 10 L35 8 L40 15" stroke="rgba(255,255,255,0.8)" stroke-width="3" fill="none"/>
+    <!-- Headband -->
+    <rect x="8" y="18" width="34" height="6" fill="#000080" rx="2"/>
+    <!-- Body -->
+    <rect x="15" y="40" width="20" height="40" fill="#FF4500" rx="3"/>
+    <!-- Arms -->
+    <rect x="5" y="45" width="10" height="25" fill="#FF4500" rx="5"/>
+    <rect x="35" y="45" width="10" height="25" fill="#FF4500" rx="5"/>
+  </g>
+  
+  <!-- Leaf symbol -->
+  <path d="M150 40 Q165 35 175 50 Q170 65 150 60 Q140 50 150 40" fill="rgba(255,255,255,0.7)"/>
+  
+  <text x="100" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    NARUTO
+  </text>
+</svg>

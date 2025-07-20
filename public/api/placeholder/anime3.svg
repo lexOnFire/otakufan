@@ -1,0 +1,36 @@
+<svg width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#aotGradient)" rx="8"/>
+  
+  <!-- Wall Maria -->
+  <rect x="0" y="200" width="200" height="80" fill="#696969"/>
+  <rect x="0" y="180" width="200" height="20" fill="#A9A9A9"/>
+  
+  <!-- Titan silhouette -->
+  <g transform="translate(70, 80)">
+    <!-- Giant head -->
+    <circle cx="30" cy="40" r="25" fill="rgba(255,255,255,0.1)"/>
+    <!-- Muscular body -->
+    <rect x="20" y="60" width="20" height="50" fill="rgba(255,255,255,0.1)" rx="3"/>
+    <!-- Arms -->
+    <rect x="5" y="70" width="12" height="35" fill="rgba(255,255,255,0.1)" rx="6"/>
+    <rect x="43" y="70" width="12" height="35" fill="rgba(255,255,255,0.1)" rx="6"/>
+  </g>
+  
+  <!-- Wings of Freedom -->
+  <g transform="translate(140, 40)">
+    <path d="M20 20 Q30 10 40 20 Q35 30 25 25 Q15 30 20 20" fill="rgba(255,255,255,0.8)"/>
+    <path d="M20 25 Q30 35 40 25 Q35 15 25 20 Q15 15 20 25" fill="rgba(255,255,255,0.8)"/>
+  </g>
+  
+  <text x="100" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+    ATTACK ON TITAN
+  </text>
+</svg>

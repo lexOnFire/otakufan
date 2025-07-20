@@ -1,0 +1,37 @@
+<svg width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mhaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#228B22;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#006400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0000FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="280" fill="url(#mhaGradient)" rx="8"/>
+  
+  <!-- Deku silhouette -->
+  <g transform="translate(75, 60)">
+    <!-- Head -->
+    <circle cx="25" cy="25" r="18" fill="rgba(255,255,255,0.9)"/>
+    <!-- Curly hair -->
+    <path d="M10 15 Q15 8 20 15 Q25 5 30 15 Q35 10 40 18" stroke="rgba(34,139,34,0.8)" stroke-width="3" fill="none"/>
+    <!-- Hero costume -->
+    <rect x="15" y="40" width="20" height="35" fill="#006400" rx="3"/>
+    <!-- Gauntlets -->
+    <rect x="10" y="50" width="8" height="15" fill="#DC143C" rx="2"/>
+    <rect x="32" y="50" width="8" height="15" fill="#DC143C" rx="2"/>
+  </g>
+  
+  <!-- Plus Ultra effect -->
+  <text x="100" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="rgba(255,255,255,0.8)" transform="rotate(-15 100 150)">
+    PLUS
+  </text>
+  <text x="100" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="rgba(255,255,255,0.8)" transform="rotate(-15 100 170)">
+    ULTRA!
+  </text>
+  
+  <text x="100" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">
+    MY HERO ACADEMIA
+  </text>
+</svg>
