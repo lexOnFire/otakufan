@@ -1,318 +1,223 @@
-# 🎌 OtakuFan - Rede Social Otaku
+# 🎌 OtakuFan - Rede Social de Anime
 
-![OtakuFan Banner](https://via.placeholder.com/800x300/1f2937/f8fafc?text=OtakuFan%20-%20Rede%20Social%20Otaku)
+<div align="center">
 
-OtakuFan é uma rede social moderna e responsiva voltada para a comunidade otaku, com recursos avançados de gamificação, sistema de níveis, e suporte completo para mobile.
+![OtakuFan Logo](https://img.shields.io/badge/🎌-OtakuFan-ff6b9d?style=for-the-badge&labelColor=1a1a2e)
 
-## ✨ Principais Recursos
+Uma rede social inspirada no Orkut com temática de anime e cultura geek, desenvolvida com Next.js 15 e tecnologias modernas.
 
-### 🎬 Conteúdo
-- **Feed Principal** - Timeline com posts, vídeos e shorts
-- **Vídeos Curtos** - Sistema similar ao TikTok para conteúdo rápido
-- **Upload de Mídia** - Imagens, vídeos e shorts com controles interativos
-- **Referências de Anime** - Sistema de tags e referências
+[![Next.js](https://img.shields.io/badge/Next.js-15.4.2-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green?logo=mongodb)](https://www.mongodb.com/)
 
-### 🏆 Gamificação
-- **Sistema de Níveis** - XP e progressão visual
-- **Badges e Selos** - Conquistas por atividades
-- **Missões Diárias** - Tarefas para ganhar XP
-- **Fãs e Super Fãs** - Sistema de seguidores melhorado
+[🚀 Demo](#) • [📖 Documentação](#funcionalidades) • [🐛 Issues](https://github.com/lexOnFire/otakufan/issues) • [💬 Discord](#)
 
-### 👥 Social
-- **Comunidades** - Grupos temáticos
-- **Mural de Recados** - Mensagens no perfil
-- **Sistema de Curtidas** - Interações melhoradas
-- **Comentários** - Com sistema de respostas
+</div>
 
-### 📱 Design Moderno
-- **Totalmente Responsivo** - Mobile-first design
-- **Dark Theme** - Interface escura moderna
-- **Animações Suaves** - Transições e efeitos
-- **Navegação Intuitiva** - Sidebar adaptável e bottom nav mobile
+## ✨ Funcionalidades
 
-## 🚀 Tecnologias
+### 🔐 **Autenticação & Perfil**
+- Sistema completo de login/registro
+- Perfis personalizáveis com avatares
+- Sistema de níveis e XP
+- Badges e conquistas
 
-### Frontend
-- **Next.js 15** - React framework com App Router
+### 📱 **Interface & Design**
+- Design responsivo mobile-first
+- Tema escuro com elementos vibrantes
+- Glassmorphism e animações suaves
+- Interface inspirada no Orkut clássico
+
+### 🎮 **Sistema de Gamificação**
+- Níveis baseados em XP
+- Sistema de badges/selos
+- Conquistas por atividades
+- Rankings e estatísticas
+
+### 📺 **Conteúdo de Mídia**
+- Feed de vídeos curtos (estilo TikTok)
+- Upload de imagens e vídeos
+- Integração com Cloudinary
+- Player de vídeo customizado
+
+### 👥 **Social Features**
+- Sistema de fãs e super fãs
+- Mural de recados clássico
+- Comments e reactions
+- Sistema de seguir/seguidor
+
+### 🏠 **Comunidades**
+- Criação de comunidades temáticas
+- Grupos de discussão de anime/manga
+- Moderação de conteúdo
+- Eventos e encontros
+
+### 💬 **Chat & Notificações**
+- Chat em tempo real (Socket.io)
+- Notificações push
+- Mensagens privadas
+- Status online/offline
+
+## 🛠️ Tech Stack
+
+### **Frontend & Backend**
+- **Next.js 15** - Framework React com App Router
 - **TypeScript** - Tipagem estática
-- **Tailwind CSS** - Estilização responsiva
-- **Radix UI** - Componentes acessíveis
-- **Framer Motion** - Animações
-- **Zustand** - Gerenciamento de estado
+- **Tailwind CSS** - Framework CSS utilitário
 
-### Backend & Database
-- **Next.js API Routes** - Backend integrado
-- **MongoDB** - Database NoSQL
+### **Database & Auth**
+- **MongoDB** - Banco NoSQL
 - **Mongoose** - ODM para MongoDB
-- **NextAuth.js** - Autenticação completa
+- **NextAuth.js** - Autenticação
+- **JWT** - Tokens de sessão
 
-### Media & Real-time
-- **Cloudinary** - Upload e processamento de mídia
+### **UI & Animations**
+- **Radix UI** - Componentes acessíveis
+- **Framer Motion** - Animações fluidas
+- **Lucide React** - Ícones modernos
+
+### **Real-time & Media**
 - **Socket.io** - Comunicação em tempo real
-- **Zod** - Validação de dados
+- **Cloudinary** - Upload e otimização de mídia
+- **Zod** - Validação de schemas
 
-## 🎨 Melhorias de Design Implementadas
+### **State & Utils**
+- **Zustand** - Gerenciamento de estado
+- **React Hook Form** - Formulários
+- **Date-fns** - Manipulação de datas
 
-### Interface Responsiva
-- **Mobile-First** - Design otimizado para celulares
-- **Sidebar Deslizante** - Menu lateral que desliza suavemente
-- **Bottom Navigation** - Navegação inferior para mobile
-- **Grid Adaptável** - Layout que se ajusta a qualquer tela
+## 🚀 Getting Started
 
-### Componentes Modernos
-- **Cards com Hover** - Efeitos de sombra e escala
-- **Avatares Gradientes** - Fallbacks coloridos
-- **Badges Interativos** - Indicadores visuais melhorados
-- **Progress Bars** - Barras de progresso animadas
-
-### Experiência de Usuário
-- **Transições Suaves** - Animações de 200-300ms
-- **Estados de Loading** - Feedback visual durante carregamento
-- **Overflow Handling** - Texto truncado com tooltips
-- **Touch Targets** - Botões adequados para touch
-
-## 📱 Recursos Mobile
-
-### Navegação Mobile
-```tsx
-// Bottom Navigation com 5 itens principais
-<div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border">
-  <div className="grid grid-cols-5 h-16">
-    {/* Home, Explore, Create, Communities, Profile */}
-  </div>
-</div>
-```
-
-### Sidebar Responsiva
-```tsx
-// Sidebar que desliza sobre o conteúdo no mobile
-<div className={cn(
-  "fixed inset-y-0 left-0 z-50 w-64 bg-card transform transition-transform duration-300",
-  isSidebarOpen ? "translate-x-0" : "-translate-x-full",
-  "md:relative md:translate-x-0"
-)}>
-```
-
-### Layout Adaptável
-```tsx
-// Grid que se ajusta ao tamanho da tela
-<div className="grid grid-cols-1 lg:grid-cols-[280px_1fr_320px] gap-6">
-  <Sidebar />
-  <Feed />
-  <TrendingTopics />
-</div>
-```
-
-## 🛠️ Instalação e Configuração
-
-### Pré-requisitos
+### **Pré-requisitos**
 - Node.js 18+ 
-- npm ou yarn
 - MongoDB (local ou Atlas)
+- Conta Cloudinary (para upload de mídia)
 
-### Instalação
+### **Instalação**
+
+1. **Clone o repositório**
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/otaku_fan.git
-cd otaku_fan
-
-# Instale as dependências
-npm install
-
-# Configure as variáveis de ambiente
-cp .env.example .env.local
-
-# Execute o projeto
-npm run dev
+git clone https://github.com/lexOnFire/otakufan.git
+cd otakufan
 ```
 
-### Variáveis de Ambiente
+2. **Instale as dependências**
+```bash
+npm install
+```
+
+3. **Configure as variáveis de ambiente**
+```bash
+cp .env.example .env.local
+```
+
+Edite `.env.local` com suas configurações:
 ```env
 # Database
 MONGODB_URI=mongodb://localhost:27017/otakufan
 
-# Authentication
-NEXTAUTH_SECRET=sua_secret_key_aqui
+# NextAuth
+NEXTAUTH_SECRET=seu-secret-super-secreto
 NEXTAUTH_URL=http://localhost:3000
 
-# Cloudinary (para upload de mídia)
-CLOUDINARY_CLOUD_NAME=seu_cloud_name
-CLOUDINARY_API_KEY=sua_api_key
-CLOUDINARY_API_SECRET=sua_api_secret
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=seu-cloud-name
+CLOUDINARY_API_KEY=sua-api-key
+CLOUDINARY_API_SECRET=seu-api-secret
+
+# JWT
+JWT_SECRET=seu-jwt-secret
 ```
 
-## 🎮 Demo
+4. **Execute o projeto**
+```bash
+npm run dev
+```
 
-### Acesso de Demonstração
-- **URL**: http://localhost:3000
-- **Email**: `demo@otakufan.com`
-- **Senha**: `demo123`
+Acesse [http://localhost:3000](http://localhost:3000) 🎉
 
-### Funcionalidades Testáveis
-- ✅ Login/logout funcional
-- ✅ Feed responsivo com posts
-- ✅ Sistema de likes interativo
-- ✅ Navegação mobile/desktop
-- ✅ Sidebar deslizante
-- ✅ Missões diárias
-- ✅ Trending topics
-- ✅ Sistema de níveis
+### **Demo Account**
+- **Email:** admin@otakufan.com
+- **Senha:** admin123
 
-## 📂 Estrutura Atualizada
+## 📁 Estrutura do Projeto
 
 ```
 src/
-├── app/                    # App Router (Next.js 15)
-│   ├── (auth)/            # Rotas de autenticação
-│   │   ├── login/         # ✅ Página de login melhorada
-│   │   └── register/      # Página de registro
-│   ├── globals.css        # ✅ Estilos globais atualizados
-│   ├── layout.tsx         # ✅ Layout principal responsivo
-│   └── page.tsx           # ✅ Homepage redesenhada
-├── components/            # ✅ Componentes modernizados
-│   ├── ui/               # Componentes base do Radix UI
-│   ├── Feed.tsx          # ✅ Feed responsivo com mídia
-│   ├── Layout.tsx        # ✅ Layout wrapper responsivo
-│   ├── Navigation.tsx    # ✅ Nav bar moderna
-│   ├── Sidebar.tsx       # ✅ Sidebar deslizante
-│   ├── TrendingTopics.tsx # ✅ Topics melhorados
-│   └── QuickActions.tsx  # ✅ Ações responsivas
-├── lib/                  
-│   ├── utils.ts          # ✅ Utilitários + cn helper
+├── app/                 # Pages e API routes (App Router)
+│   ├── globals.css     # Estilos globais
+│   ├── layout.tsx      # Layout principal
+│   ├── page.tsx        # Página inicial
+│   ├── login/          # Página de login
+│   └── api/            # API routes
+├── components/         # Componentes reutilizáveis
+│   ├── ui/            # Componentes base (Radix)
+│   ├── Feed.tsx       # Feed principal
+│   ├── Sidebar.tsx    # Barra lateral
 │   └── ...
-└── stores/               
-    └── index.ts          # ✅ Store com sidebar state
+├── lib/               # Utilitários e configurações
+│   ├── auth.ts        # Configuração NextAuth
+│   ├── db.ts          # Conexão MongoDB
+│   ├── utils.ts       # Funções utilitárias
+│   └── validations.ts # Schemas Zod
+├── types/             # Definições TypeScript
+├── hooks/             # Custom hooks
+└── stores/            # Estado global (Zustand)
 ```
-
-## 🎯 Melhorias Implementadas
-
-### ✅ Design & UX
-- [x] **Layout Responsivo Completo** - Mobile, tablet e desktop
-- [x] **Sidebar Deslizante** - Animação suave no mobile
-- [x] **Bottom Navigation** - Navegação inferior para mobile
-- [x] **Cards Modernos** - Hover effects e sombras
-- [x] **Avatares Gradientes** - Fallbacks coloridos
-- [x] **Typography Melhorada** - Tamanhos responsivos
-
-### ✅ Componentes
-- [x] **Feed Responsivo** - Posts, imagens e vídeos
-- [x] **Navigation Bar** - Sticky e adaptável
-- [x] **Trending Topics** - Layout melhorado
-- [x] **Quick Actions** - Botões responsivos
-- [x] **Progress Bars** - Animadas e estilizadas
-
-### ✅ Interações
-- [x] **Touch Targets** - Botões adequados para mobile
-- [x] **Hover States** - Efeitos visuais no desktop
-- [x] **Loading States** - Feedback durante ações
-- [x] **Transitions** - Animações suaves em tudo
-
-### 🚧 Próximas Melhorias
-- [ ] **PWA** - Progressive Web App
-- [ ] **Offline Support** - Funcionalidade offline
-- [ ] **Push Notifications** - Notificações push
-- [ ] **Infinite Scroll** - Carregamento infinito
-- [ ] **Image Optimization** - Lazy loading avançado
 
 ## 🎨 Design System
 
-### Cores Principais
-```css
-/* Gradientes principais */
-.gradient-primary { @apply bg-gradient-to-r from-pink-500 to-purple-600; }
-.gradient-secondary { @apply bg-gradient-to-r from-blue-500 to-cyan-500; }
-.gradient-accent { @apply bg-gradient-to-r from-green-500 to-blue-500; }
+### **Cores Principais**
+- **Primary:** `#667eea` (Roxo anime)
+- **Secondary:** `#ff6b9d` (Rosa vibrante)
+- **Accent:** `#f8b500` (Dourado)
+- **Background:** `#0f0f23` (Azul escuro)
 
-/* Cores de fundo */
-.bg-background { @apply bg-gray-950; }
-.bg-card { @apply bg-gray-900; }
-.bg-accent { @apply bg-gray-800; }
-```
+### **Tipografia**
+- **Headings:** Orbitron (futurista)
+- **Body:** Poppins (legível)
+- **Code:** JetBrains Mono
 
-### Espaçamentos Responsivos
-```css
-/* Padding responsivo */
-.responsive-padding { @apply p-4 md:p-6; }
+### **Componentes**
+- Glassmorphism com backdrop-blur
+- Gradientes vibrantes
+- Animações suaves
+- Modo escuro por padrão
 
-/* Margins responsivos */
-.responsive-margin { @apply space-y-4 md:space-y-6; }
+## 🤝 Contribuindo
 
-/* Grid responsivo */
-.responsive-grid { @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3; }
-```
-
-### Breakpoints
-```css
-/* Mobile First */
-sm: '640px'   /* Small devices */
-md: '768px'   /* Medium devices */
-lg: '1024px'  /* Large devices */
-xl: '1280px'  /* Extra large devices */
-2xl: '1536px' /* 2X large devices */
-```
-
-## 📱 Guia de Responsividade
-
-### Mobile (< 768px)
-- Navigation: Bottom navigation bar
-- Sidebar: Overlay deslizante
-- Layout: Coluna única
-- Cards: Width completa
-- Text: Tamanhos menores (text-sm)
-
-### Tablet (768px - 1024px)
-- Navigation: Top bar expandida
-- Sidebar: Colapsível
-- Layout: Duas colunas
-- Cards: Grid 2x2
-- Text: Tamanhos médios (text-base)
-
-### Desktop (> 1024px)
-- Navigation: Full top bar
-- Sidebar: Fixa e expandida
-- Layout: Três colunas
-- Cards: Grid 3x3
-- Text: Tamanhos completos (text-lg)
-
-## 🚀 Performance
-
-### Otimizações Implementadas
-- **Lazy Loading** - Componentes carregados sob demanda
-- **Image Optimization** - Next.js Image component
-- **Code Splitting** - Bundle otimizado por rota
-- **Tree Shaking** - Eliminação de código morto
-- **CSS Purging** - Tailwind CSS otimizado
-
-### Métricas Alvo
-- **FCP** < 1.5s (First Contentful Paint)
-- **LCP** < 2.5s (Largest Contentful Paint)
-- **CLS** < 0.1 (Cumulative Layout Shift)
-- **FID** < 100ms (First Input Delay)
-
-## 🤝 Contribuição
-
-### Como Contribuir
-1. Fork o projeto
-2. Crie uma branch (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-### Padrões de Código
-- **TypeScript** - Sempre tipado
-- **Tailwind** - Classes utilitárias
-- **Responsivo** - Mobile-first sempre
-- **Acessibilidade** - ARIA labels e keyboard navigation
+## 📝 Roadmap
+
+- [ ] Sistema de stories
+- [ ] Marketplace de merchandise
+- [ ] Integração com APIs de anime (MyAnimeList, AniList)
+- [ ] Sistema de recomendações
+- [ ] App mobile (React Native)
+- [ ] Modo claro
+- [ ] Internacionalização (i18n)
+- [ ] PWA (Progressive Web App)
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+## 👨‍💻 Autor
+
+**Alex** - [@lexOnFire](https://github.com/lexOnFire)
+
 ---
 
 <div align="center">
-  <p>🎌 Feito com ❤️ para a comunidade otaku 🎌</p>
-  <p>
-    <strong>OtakuFan</strong> - Conectando otakus ao redor do mundo
-  </p>
+
+**Feito com ❤️ para a comunidade otaku**
+
+[⬆ Voltar ao topo](#-otakufan---rede-social-de-anime)
+
 </div>
